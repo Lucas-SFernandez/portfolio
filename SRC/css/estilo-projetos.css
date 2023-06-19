@@ -1,0 +1,117 @@
+body{
+    font-family:'Roboto Condensed', sans-serif;
+    margin: 0 auto;
+    max-width: 1280px;
+    min-height: 100vh;
+    background: rgb(38,45,41);
+    background: linear-gradient(90deg, rgba(38,45,41,1) 7%, rgba(54,94,84,1) 42%, rgba(40,209,209,1) 100%);
+}
+
+main{
+    background: rgb(28, 31, 29);
+    background: linear-gradient(90deg, rgba(28, 31, 29) 7%, rgb(44, 71, 65) 42%, rgb(38, 161, 161) 100%);
+    padding: 100px;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1{
+    color: rgb(24, 175, 175);
+    font-size: 35px;
+    text-align: center;
+    padding: 30px;
+}
+
+p{
+    color: #ffffff;
+    padding-left: 30px;
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+a{
+    color: #ffffff;
+    justify-content: center;
+}
+
+header{
+    margin: 10px;
+}
+
+header a{
+    font-size: 16px;
+    transition: 0.3s ease-in-out ;
+}
+
+header a:hover{
+    color: rgb(4, 255, 255);
+}
+
+ul.menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+li.home{
+    width: 90px;
+    display: block;
+    text-align: center;
+}
+
+li.contato{
+    width: 90px;
+    display: block;
+    text-align: center;
+}
+
+    header li{
+        margin: 20px;
+    }
+
+ul.menu a{
+    font-size: 16px;
+    transition: 0.3s ease-in-out ;
+}
+
+ul a:hover{
+    color: rgb(4, 255, 255);
+}
+
+header li{
+        transition: 0.3s ease-in-out;
+        padding: 10px;
+        border-style: solid;
+        border-color: #ffffff;
+        border-radius: 20px;
+}
+
+header li.home:hover{
+    transform: scale(1.2);
+    border-color: rgb(27, 189, 189);
+}
+
+header li.contato:hover{
+    transform: scale(1.2);
+    border-color: rgb(27, 189, 189);
+}
+
+ul img{
+    background-color: aqua;
+    display: flex;
+    justify-content: flex-start;
+    width: 400px;
+    flex-wrap: wrap;
+}
+
+ul.conteudo{
+    display: flex;
+    justify-content: center;
+}
+
+ul p{
+    display: flex;
+    justify-content: space-between;
+}

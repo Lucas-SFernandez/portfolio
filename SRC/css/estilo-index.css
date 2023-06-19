@@ -86,7 +86,7 @@ body{
     .container{
         display: contents;
         justify-content: space-evenly;
-        margin-left: 30px;
+        margin: 0 auto;
     }
 
     .lucas{
@@ -152,6 +152,83 @@ body{
         height: 550px;
         width: 280px;
         margin-left: 45px;
+        margin-top: -50px;
+        padding: 2px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .container{
+        display: contents;
+        justify-content: space-evenly;
+        margin: 0 auto;
+    }
+
+    .lucas{
+        width: 180px;
+        margin: 0 auto;
+        margin-top: -60px;
+    }
+
+    .sobre_mim{
+        font-size: 12px;
+    }
+
+    .formacao{
+        font-size: 12px;
+    }
+
+    .qualificacoes{
+        font-size: 12px;
+    }
+
+    #sobre_mim{
+        font-size: 13px;
+    }
+
+    #formacao{
+        font-size: 13px;
+    }
+
+    #qualificacoes{
+        font-size: 13px;
+    }
+
+    .fernandez{
+        font-size: 23px;
+    }
+
+    .fronte-end{
+        font-size: 16px;
+    }
+
+    .github{
+        width: 20px;
+        height: 20px;
+    }
+
+    .linkedin{
+        width: 20px;
+        height: 20px;
+    }
+
+    .insta{
+        width: 20px;
+        height: 20px;
+    }
+
+    .icones{
+        display: flex;
+        justify-content: space-evenly;
+        margin-right: 20px;
+    }
+
+    .container_corpo{
+        height: 550px;
+        width: 260px;
+        display: block;
+        justify-content: center;
+        margin: 0 auto;
         margin-top: -50px;
         padding: 2px;
     }

@@ -7,6 +7,156 @@ body{
     background: linear-gradient(90deg, rgba(38,45,41,1) 7%, rgba(54,94,84,1) 42%, rgba(40,209,209,1) 100%);
 }
 
+a{
+    color: #ffffff;
+}
+
+p{
+    color: #ffffff;
+    font-size: 18px;
+}
+
+h1{
+    color: rgb(24, 175, 175);
+    font-size: 35px;
+}
+
+h2{
+    font-size: 25px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+hgroup{
+    color: #ffffff;
+    text-align: left;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+ul#informacoes{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+header li{
+    margin: 20px;
+}
+
+header img{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    border-radius: 50%;
+    border: 5px solid rgb(24, 175, 175);
+}
+
+div.centro{
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+}
+
+nav.portflio{
+    margin: 10px;
+}
+
+nav a{
+    font-size: 16px;
+    transition: 0.3s ease-in-out ;
+}
+
+nav a:hover{
+    color: rgb(4, 255, 255);
+}
+
+nav a.contact:hover{
+    color: rgb(4, 255, 255);
+}
+
+nav li{
+    transition: 0.3s ease-in-out;
+    padding: 10px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 20px;
+}
+
+nav li.projetos:hover{
+    transform: scale(1.2);
+    border-color: rgb(27, 189, 189);
+}
+
+nav li.contato:hover{
+    transform: scale(1.2);
+    border-color: rgba(54,94,84,1);
+}
+
+main{
+    background: rgb(28, 31, 29);
+    background: linear-gradient(90deg, rgba(28, 31, 29) 7%, rgb(44, 71, 65) 42%, rgb(38, 161, 161) 100%);
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main div{
+    padding: 10px;
+}
+
+.icones #github{
+    filter: invert(1);
+    transition: 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+}
+
+footer.icones #github:hover{
+    transform: scale(1.2);
+}
+
+footer.icones #linkedin{
+    filter: invert(1);
+    transition: 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+}
+
+footer.icones #linkedin:hover{
+    transform: scale(1.2);
+}
+
+.icones #insta{
+    filter: invert(1);
+    transition: 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+}
+
+.icones #insta:hover{
+    transform: scale(1.2);
+}
+
+footer img{
+    width: 30px;
+    height: 30px;
+}
+
+footer a{
+    margin: 20px;
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
 @media screen and (max-width:896px) {
     .container{
         justify-content: space-evenly;
@@ -232,155 +382,4 @@ body{
         margin-top: -50px;
         padding: 2px;
     }
-}
-
-
-a{
-    color: #ffffff;
-}
-
-p{
-    color: #ffffff;
-    font-size: 18px;
-}
-
-h1{
-    color: rgb(24, 175, 175);
-    font-size: 35px;
-}
-
-h2{
-    font-size: 25px;
-}
-
-h3{
-    font-size: 20px;
-}
-
-hgroup{
-    color: #ffffff;
-    text-align: left;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding: 30px;
-}
-
-ul#informacoes{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-
-header li{
-    margin: 20px;
-}
-
-header img{
-    display: flex;
-    justify-content: center;
-    width: 300px;
-    border-radius: 50%;
-    border: 5px solid rgb(24, 175, 175);
-}
-
-div.centro{
-    display: flex;
-    justify-content: center;
-    padding: 80px;
-}
-
-nav.portflio{
-    margin: 10px;
-}
-
-nav a{
-    font-size: 16px;
-    transition: 0.3s ease-in-out ;
-}
-
-nav a:hover{
-    color: rgb(4, 255, 255);
-}
-
-nav a.contact:hover{
-    color: rgb(4, 255, 255);
-}
-
-nav li{
-    transition: 0.3s ease-in-out;
-    padding: 10px;
-    border-style: solid;
-    border-color: #ffffff;
-    border-radius: 20px;
-}
-
-nav li.projetos:hover{
-    transform: scale(1.2);
-    border-color: rgb(27, 189, 189);
-}
-
-nav li.contato:hover{
-    transform: scale(1.2);
-    border-color: rgba(54,94,84,1);
-}
-
-main{
-    background: rgb(28, 31, 29);
-    background: linear-gradient(90deg, rgba(28, 31, 29) 7%, rgb(44, 71, 65) 42%, rgb(38, 161, 161) 100%);
-    height: 600px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-main div{
-    padding: 10px;
-}
-
-.icones #github{
-    filter: invert(1);
-    transition: 0.3s ease-in-out;
-    display: flex;
-    justify-content: center;
-}
-
-footer.icones #github:hover{
-    transform: scale(1.2);
-}
-
-footer.icones #linkedin{
-    filter: invert(1);
-    transition: 0.3s ease-in-out;
-    display: flex;
-    justify-content: center;
-}
-
-footer.icones #linkedin:hover{
-    transform: scale(1.2);
-}
-
-.icones #insta{
-    filter: invert(1);
-    transition: 0.3s ease-in-out;
-    display: flex;
-    justify-content: center;
-}
-
-.icones #insta:hover{
-    transform: scale(1.2);
-}
-
-footer img{
-    width: 30px;
-    height: 30px;
-}
-
-footer a{
-    margin: 20px;
-    text-align: center;
-}
-
-footer{
-    display: flex;
-    justify-content: center;
 }

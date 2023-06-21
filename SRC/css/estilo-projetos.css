@@ -94,12 +94,18 @@ ul.menu{
 li.home{
     width: 90px;
     display: block;
+}
+
+li#home{
     text-align: center;
 }
 
 li.contato{
     width: 90px;
     display: block;
+}
+
+li#contao{
     text-align: center;
 }
 
@@ -178,77 +184,199 @@ ul p{
 
 @media screen and (max-width:896px) {
     #menu{
+        display: contents;
         justify-content: space-evenly;
-        padding-left: 50px;
-        padding-right: 50px;
+        margin: 0 auto;
+        text-align: center;
     }
 
-    .lucas{
-        width: 200px;
-        margin-left: 30px;
-        margin-top: -60px;
-    }
-
-    .sobre_mim{
-        font-size: 15px;
-    }
-
-    .formacao{
-        font-size: 15px;
-    }
-
-    .qualificacoes{
-        font-size: 15px;
-    }
-
-    #sobre_mim{
-        font-size: 18px;
-    }
-
-    #formacao{
-        font-size: 18px;
-    }
-
-    #qualificacoes{
-        font-size: 18px;
-    }
-
-    .fernandez{
-        font-size: 30px;
-    }
-
-    .fronte-end{
-        font-size: 22px;
-    }
-
-    .github{
-        width: 30px;
-        height: 30px;
-    }
-
-    .linkedin{
-        width: 30px;
-        height: 30px;
-    }
-
-    .insta{
-        width: 30px;
-        height: 30px;
-    }
-
-    .icones{
+    ul.menu{
         display: flex;
         justify-content: space-evenly;
     }
 
-    .container_corpo{
-        height: 650px;
-        width: 370px;
+    li.home{
+        width: 90px;
+    }
+
+    li.contato{
+        width: 90px;
+        transition: ease-in-out;
+    }
+
+    header li.contato{
+        transition: 0.3s ease-in-out;
+}
+
+    header li.contato:hover{
+        transform: scale(1.2);
+        border-color: rgb(27, 189, 189);
+    }
+
+    header a.h{
+        font-size: 18px;
+    }
+
+    header a.c{
+        font-size: 18px;
+    }
+
+    .titulo{
+        width: 180px;
         margin: 0 auto;
-        margin-top: -50px;
-        padding: 2px;
+        padding-top: 10px;
+    }
+
+    h1.projetos{
+        font-size: 30px;
+    }
+
+    main p{
+        font-size: 15px;
+        width: 280px;
+        line-height: 20px;
+    }
+
+
+    ul.conteudo{
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        width: 330px;
+        height: 730px;
+    }
+
+    main li{
+        padding-left: 14px;
+        padding-bottom: 5px;
+        margin: 0 auto;
+    }
+
+    .container{
+        height: 800px;
+        width: 330px;
+        display: block;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    #container{
+        height: 850px;
+        width: 380px;
+        display: block;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 5px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+    }
+
+    .the{
+        width: 280px;
+    }
+
+    .pok{
+        width: 280px;
     }
     }
+
+    @media screen and (max-width:786px) {
+        #menu{
+            display: contents;
+            justify-content: space-evenly;
+            margin: 0 auto;
+            text-align: center;
+        }
+    
+        ul.menu{
+            display: flex;
+            justify-content: space-evenly;
+        }
+    
+        li.home{
+            width: 90px;
+        }
+    
+        li.contato{
+            width: 90px;
+            transition: ease-in-out;
+        }
+    
+        header li.contato{
+            transition: 0.3s ease-in-out;
+    }
+    
+        header li.contato:hover{
+            transform: scale(1.2);
+            border-color: rgb(27, 189, 189);
+        }
+    
+        header a.h{
+            font-size: 18px;
+        }
+    
+        header a.c{
+            font-size: 18px;
+        }
+    
+        .titulo{
+            width: 180px;
+            margin: 0 auto;
+            padding-top: 10px;
+        }
+    
+        h1.projetos{
+            font-size: 30px;
+        }
+    
+        main p{
+            font-size: 15px;
+            width: 280px;
+            line-height: 20px;
+        }
+    
+    
+        ul.conteudo{
+            display: block;
+            flex-direction: column;
+            justify-content: center;
+            width: 320px;
+            height: 730px;
+        }
+    
+        main li{
+            padding-left: 8px;
+            padding-bottom: 5px;
+            margin: 0 auto;
+        }
+    
+        .container{
+            height: 800px;
+            width: 320px;
+            display: block;
+            justify-content: center;
+            margin: 0 auto;
+        }
+    
+        #container{
+            height: 850px;
+            width: 350px;
+            display: block;
+            justify-content: center;
+            margin: 0 auto;
+            padding: 5px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }
+    
+        .the{
+            width: 280px;
+        }
+    
+        .pok{
+            width: 280px;
+        }
+        }
 
 
 @media screen and (max-width:375px) {
@@ -256,6 +384,38 @@ ul p{
         display: contents;
         justify-content: space-evenly;
         margin: 0 auto;
+        text-align: center;
+    }
+
+    ul.menu{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    li.home{
+        width: 90px;
+    }
+
+    li.contato{
+        width: 90px;
+        transition: ease-in-out;
+    }
+
+    header li.contato{
+        transition: 0.3s ease-in-out;
+}
+
+    header li.contato:hover{
+        transform: scale(1.2);
+        border-color: rgb(27, 189, 189);
+    }
+
+    header a.h{
+        font-size: 18px;
+    }
+
+    header a.c{
+        font-size: 18px;
     }
 
     .titulo{
@@ -263,65 +423,57 @@ ul p{
         margin: 0 auto;
     }
 
-    .sobre_mim{
-        font-size: 12px;
+    h1.projetos{
+        font-size: 28px;
     }
 
-    .formacao{
-        font-size: 12px;
-    }
-
-    .qualificacoes{
-        font-size: 12px;
-    }
-
-    #sobre_mim{
-        font-size: 13px;
-    }
-
-    #formacao{
-        font-size: 13px;
-    }
-
-    #qualificacoes{
-        font-size: 13px;
-    }
-
-    .projetos{
-        font-size: 23px;
-    }
-
-    .fronte-end{
-        font-size: 16px;
-    }
-
-    .github{
-        width: 20px;
-        height: 20px;
-    }
-
-    .linkedin{
-        width: 20px;
-        height: 20px;
-    }
-
-    .insta{
-        width: 20px;
-        height: 20px;
-    }
-
-    .icones{
-        display: flex;
-        justify-content: space-evenly;
-        margin-right: 20px;
-    }
-
-    .container_corpo{
-        height: 550px;
+    main p{
+        font-size: 15px;
         width: 280px;
-        margin-left: 45px;
-        margin-top: -50px;
-        padding: 2px;
+        line-height: 20px;
+    }
+
+
+    ul.conteudo{
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        width: 330px;
+        height: 730px;
+    }
+
+    main li{
+        padding: 12px;
+        margin: 0 auto;
+        margin-bottom: 5px;
+    }
+
+    .container{
+        height: 650px;
+        width: 340px;
+        display: block;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 5px;
+    }
+
+    #container{
+        height: 830px;
+        width: 350px;
+        display: block;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 5px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+    }
+
+    .the{
+        width: 280px;
+    }
+
+    .pok{
+        width: 280px;
     }
 }
 
@@ -330,6 +482,38 @@ ul p{
         display: contents;
         justify-content: space-evenly;
         margin: 0 auto;
+        text-align: center;
+    }
+
+    ul.menu{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    li.home{
+        width: 80px;
+    }
+
+    li.contato{
+        width: 80px;
+        transition: ease-in-out;
+    }
+
+    header li.contato{
+        transition: 0.3s ease-in-out;
+}
+
+    header li.contato:hover{
+        transform: scale(1.2);
+        border-color: rgb(27, 189, 189);
+    }
+
+    header a.h{
+        font-size: 15px;
+    }
+
+    header a.c{
+        font-size: 15px;
     }
 
     .titulo{
@@ -337,64 +521,47 @@ ul p{
         margin: 0 auto;
     }
 
-    .sobre_mim{
+    h1.projetos{
+        font-size: 25px;
+    }
+
+    main p{
         font-size: 12px;
+        width: 220px;
+        line-height: 18px;
     }
 
-    .formacao{
-        font-size: 12px;
-    }
 
-    .qualificacoes{
-        font-size: 12px;
-    }
-
-    #sobre_mim{
-        font-size: 13px;
-    }
-
-    #formacao{
-        font-size: 13px;
-    }
-
-    #qualificacoes{
-        font-size: 13px;
-    }
-
-    .projetos{
-        font-size: 23px;
-    }
-
-    .fronte-end{
-        font-size: 16px;
-    }
-
-    .github{
-        width: 20px;
-        height: 20px;
-    }
-
-    .linkedin{
-        width: 20px;
-        height: 20px;
-    }
-
-    .insta{
-        width: 20px;
-        height: 20px;
-    }
-
-    .icones{
-        display: flex;
-        justify-content: space-evenly;
-        margin-right: 20px;
-    }
-
-    .conteudo{
+    ul.conteudo{
         display: block;
         flex-direction: column;
+        justify-content: center;
         width: 260px;
-        height: 22000px;
+        height: 620px;
+    }
+
+    main li{
+        padding: 10px;
+    }
+
+    .container{
+        height: 550px;
+        width: 260px;
+        display: block;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 2px;
+    }
+
+    #container{
+        height: 700px;
+        width: 280px;
+        display: block;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 2px;
+        margin-bottom: 15px;
+        border-radius: 10px;
     }
 
     .the{
@@ -404,25 +571,4 @@ ul p{
     .pok{
         width: 220px;
     }
-
-    #container{
-        height: 800px;
-        width: 260px;
-        display: block;
-        justify-content: center;
-        margin: 0 auto;
-
-        padding: 2px;
-    }
-
-    .container{
-        height: 550px;
-        width: 260px;
-        display: block;
-        justify-content: center;
-        margin: 0 auto;
-        
-        padding: 2px;
-    }
-
 }

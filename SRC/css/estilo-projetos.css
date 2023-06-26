@@ -8,8 +8,6 @@ body{
 }
 
 main{
-    background: rgb(28, 31, 29);
-    background: linear-gradient(90deg, rgba(28, 31, 29) 7%, rgb(44, 71, 65) 42%, rgb(38, 161, 161) 100%);
     padding: 100px;
     justify-content: center;
     width: auto;
@@ -17,24 +15,32 @@ main{
     margin: 100px 0px 100px 0px;
     display: flex;
     flex-wrap: wrap;
+    border-radius: 10px;
     gap: 2em;
 }
 
-main.container{
-    display: flex;
-    justify-content: space-evenly;
+main#container{
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+div.container{
+    margin-top: -80px;
 }
 
 div.titulo{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-bottom: 20px;
 }
 
 h1.projetos{
     color: rgb(255, 255, 255);
     font-size: 35px;
-    width: 400px;
+    width: 300px;
     border-radius: 10px;
     border-style: solid;
     border-color: rgb(255, 255, 255);
@@ -53,18 +59,26 @@ h1.projetos:hover{
 p{
     color: #ffffff;
     padding-left: 30px;
-    padding-top: 10px;
     font-size: 18px;
-    background-color: #1f1f1f;
-    border-radius: 10px;
-    line-height: 2em;
+    line-height: 25px;
     text-decoration: underline;
     margin-top: 15px;
     gap: 2em;
+}
+
+li.the{
     transition: ease-in-out 0.5s ;
 }
 
-p:hover{
+li.the:hover{
+    transform: scale(1.1);
+}
+
+li.pok{
+    transition: ease-in-out 0.5s ;
+}
+
+li.pok:hover{
     transform: scale(1.1);
 }
 
@@ -93,16 +107,12 @@ ul.menu{
 
 li.home{
     width: 90px;
-    display: block;
-}
-
-li#home{
     text-align: center;
 }
 
 li.contato{
     width: 90px;
-    display: block;
+    text-align: center;
 }
 
 li#contao{
@@ -146,7 +156,6 @@ ul img{
 }
 
 li img{
-    transition: ease-in-out 0.5s;
     border-radius: 10px;
 }
 
@@ -154,22 +163,12 @@ main li{
     padding-top: 20px;
 }
 
-li img:hover{
-    transform: scale(1.1);
-}
 
-ul.conteudo{
+main ul.conteudo{
     display: flex;
+    position: relative;
     justify-content: center;
-    gap: 2em 2em;
-    box-sizing: border-box;
-    border-style: solid;
-    padding: 10px;
-    width: 1100px;
-    height: 600px;
-    border-radius: 10px;
-    border-color: #ffffff;
-    transition: ease-in-out 0.5s;
+    gap: 50px;
 }
 
 ul.conteudo:hover{
@@ -178,19 +177,21 @@ ul.conteudo:hover{
 }
 
 ul p{
-    display: flex;
-    justify-content: space-between;
+    display: contents;
+    position: relative;
+    justify-content: center;
 }
 
 @media screen and (max-width:896px) {
     #menu{
-        display: contents;
+        display: flex;
+        position: relative;
         justify-content: space-evenly;
-        margin: 0 auto;
-        text-align: center;
+
     }
 
     ul.menu{
+        width: 100%;
         display: flex;
         justify-content: space-evenly;
     }
@@ -233,7 +234,9 @@ ul p{
 
     main p{
         font-size: 15px;
-        width: 280px;
+        width: 400px;
+        text-align: left;
+        justify-content: center;
         line-height: 20px;
     }
 
@@ -252,7 +255,7 @@ ul p{
         margin: 0 auto;
     }
 
-    .container{
+    div.container{
         height: 800px;
         width: 330px;
         display: block;
@@ -260,8 +263,8 @@ ul p{
         margin: 0 auto;
     }
 
-    #container{
-        height: 850px;
+    main#container{
+        height: 800px;
         width: 380px;
         display: block;
         justify-content: center;
@@ -280,12 +283,11 @@ ul p{
     }
     }
 
-    @media screen and (max-width:786px) {
+    @media screen and (max-width:768px) {
         #menu{
-            display: contents;
+            display: flex;
+            position: relative;
             justify-content: space-evenly;
-            margin: 0 auto;
-            text-align: center;
         }
     
         ul.menu{
@@ -350,7 +352,7 @@ ul p{
             margin: 0 auto;
         }
     
-        .container{
+        div.container{
             height: 800px;
             width: 320px;
             display: block;
@@ -358,7 +360,7 @@ ul p{
             margin: 0 auto;
         }
     
-        #container{
+        main#container{
             height: 850px;
             width: 350px;
             display: block;
@@ -381,10 +383,9 @@ ul p{
 
 @media screen and (max-width:375px) {
     #menu{
-        display: contents;
+        display: flex;
+        position: relative;
         justify-content: space-evenly;
-        margin: 0 auto;
-        text-align: center;
     }
 
     ul.menu{
@@ -448,7 +449,7 @@ ul p{
         margin-bottom: 5px;
     }
 
-    .container{
+    div.container{
         height: 650px;
         width: 340px;
         display: block;
@@ -457,8 +458,8 @@ ul p{
         padding: 5px;
     }
 
-    #container{
-        height: 830px;
+    main#container{
+        height: 800px;
         width: 350px;
         display: block;
         justify-content: center;
@@ -479,10 +480,9 @@ ul p{
 
 @media screen and (max-width:320px) {
     #menu{
-        display: contents;
+        display: flex;
+        position: relative;
         justify-content: space-evenly;
-        margin: 0 auto;
-        text-align: center;
     }
 
     ul.menu{
@@ -544,7 +544,7 @@ ul p{
         padding: 10px;
     }
 
-    .container{
+    div.container{
         height: 550px;
         width: 260px;
         display: block;
@@ -553,8 +553,8 @@ ul p{
         padding: 2px;
     }
 
-    #container{
-        height: 700px;
+    main#container{
+        height: 670px;
         width: 280px;
         display: block;
         justify-content: center;
